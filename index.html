@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/form-validator/css/style.css" />
+    <link rel="shortcut icon" href="/form-validator/img/favicon.png">
+
+    <title>Form Validator - Responsive Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__img">
+        <img src="/form-validator/img/char.svg" alt="Man Working" />
+      </div>
+
+      <div class="container__form">
+        <h1>Join our Team</h1>
+        <!--Form-->
+        <form action="" id="form">
+          <!--Full Name-->
+          <div class="form__group">
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="3"
+              maxlength="100"
+            />
+          </div>
+          <!--Phone Number-->
+          <div class="form__group">
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+            />
+          </div>
+          <!--Email-->
+          <div class="form__group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <!--Email-->
+          <div class="form__group">
+            <label for="website">Website URL:</label>
+            <input type="url" id="website" name="website" required />
+          </div>
+          <!--Select-->
+          <div class="form__group">
+            <label for="select">Choose a option:</label>
+            <select id="select" name="select">
+              <option value="front">Front-End Developer</option>
+              <option value="back">Backend Developer</option>
+              <option value="fullstack">FullStack Developer</option>
+              <option value="database">Database Analyst</option>
+            </select>
+          </div>
+
+          <!--Submit Button-->
+          <button type="submit">Submit</button>
+        </form>
+        <!--Error/Sucess Message-->
+        <div class="message-container">
+          <h4 id="message">Don't Hesitate!</h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
