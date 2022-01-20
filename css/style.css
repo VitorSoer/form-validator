@@ -149,9 +149,20 @@ button:focus {
     font-size: 56.25%;
   }
 
+  body{
+    background: var(--white);
+    
+  }
+  
   h1{
     font-size: 3.25rem;
   }
+
+  .container{
+    border-radius: 0;
+    box-shadow: none;
+  }
+
   .container__img img{
     width: 100%;
   }
